@@ -8,13 +8,13 @@
 
 #import "ViewController.h"
 
-@interface ViewController () <UIWebViewDelegate, UITextFieldDelegate, UIScrollViewDelegate>
+@interface ViewController () <UIWebViewDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UITextField *urlTextField;
 @property (weak, nonatomic) IBOutlet UIButton *goBackButton;
 @property (weak, nonatomic) IBOutlet UIButton *goForwardButton;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-
+@property(nonatomic, readonly, retain) UIScrollView *scrollView;
 @end
 
 @implementation ViewController
@@ -22,8 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     self.goBackButton.enabled = FALSE;
     self.goForwardButton.enabled = FALSE;
+    self.webView.scrollView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,6 +57,9 @@
     self.urlTextField.text = [NSString stringWithFormat:@"%@", currentURL.absoluteString];
     
     self.titleLabel.text = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    
+    self.webView.scrollView.scrollEnabled = YES;
+    
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
@@ -95,14 +100,23 @@
                                   message:@""
                                   preferredStyle:UIAlertControllerStyleAlert];
     
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-
-    [self.urlTextField isHidden];
-    
+- (void)scrollViewDidScroll :(UIScrollView *)scrollView
+{
+    if (scrollView.contentOffset.y == 0) //Show toolbar when at top
+    {
+        [self.urlTextField setHidden:NO];
+    }
+    else
+    {
+        [self.urlTextField setHidden:YES];
+    }
 }
-
 
 @end

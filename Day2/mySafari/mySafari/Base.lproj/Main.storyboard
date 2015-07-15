@@ -16,19 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter URL" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ghS-VG-JQW">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="67" width="340" height="29"/>
-                                </variation>
-                                <connections>
-                                    <action selector="textFieldShouldReturn:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="bnv-cj-skr"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gRF-fx-rbP"/>
-                                </connections>
-                            </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2aj-f8-F1E">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
@@ -123,11 +110,24 @@
                                     <rect key="frame" x="16" y="95" width="340" height="24"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter URL" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="P3w-xm-Gci">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="64" width="340" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="textFieldShouldReturn:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Btd-2u-jMg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="rm8-Nt-AbF"/>
+                                </connections>
+                            </textField>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jw2-VL-qqC">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="121" width="400" height="446"/>
+                                    <rect key="frame" x="0.0" y="118" width="400" height="449"/>
                                 </variation>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="vgl-h3-1DO"/>
@@ -137,17 +137,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="ghS-VG-JQW"/>
                                 <exclude reference="2aj-f8-F1E"/>
                                 <exclude reference="MOu-mc-HJO"/>
+                                <exclude reference="P3w-xm-Gci"/>
                                 <exclude reference="Jw2-VL-qqC"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="ghS-VG-JQW"/>
                                 <include reference="2aj-f8-F1E"/>
                                 <include reference="MOu-mc-HJO"/>
+                                <include reference="P3w-xm-Gci"/>
                                 <include reference="Jw2-VL-qqC"/>
                             </mask>
                         </variation>
@@ -157,7 +157,7 @@
                         <outlet property="goBackButton" destination="vju-1X-AdX" id="bOX-1i-nmc"/>
                         <outlet property="goForwardButton" destination="10r-et-9ZK" id="wrt-jd-4BF"/>
                         <outlet property="titleLabel" destination="MOu-mc-HJO" id="58V-hJ-Y7t"/>
-                        <outlet property="urlTextField" destination="ghS-VG-JQW" id="RBR-85-qLX"/>
+                        <outlet property="urlTextField" destination="P3w-xm-Gci" id="GLs-wa-M11"/>
                         <outlet property="webView" destination="Jw2-VL-qqC" id="yvy-gK-RGm"/>
                     </connections>
                 </viewController>
