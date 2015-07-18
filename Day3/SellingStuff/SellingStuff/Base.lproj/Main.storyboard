@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Product-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell multipleTouchEnabled="YES" contentMode="scaleAspectFit" selectionStyle="blue" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="myCell" textLabel="2yD-ko-Sym" detailTextLabel="xbA-Yd-eCr" style="IBUITableViewCellStyleSubtitle" id="Ywh-Qu-CdT">
+                                    <tableViewCell multipleTouchEnabled="YES" contentMode="scaleAspectFit" selectionStyle="blue" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="myCell" textLabel="2yD-ko-Sym" detailTextLabel="xbA-Yd-eCr" style="IBUITableViewCellStyleSubtitle" id="Ywh-Qu-CdT">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ywh-Qu-CdT" id="4x8-WO-bwd">
@@ -46,10 +46,13 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wdV-xh-Mtq" kind="show" trigger="accessoryAction" id="aqJ-UM-CC7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="484"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="373" height="484"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="1tf-wX-hXD"/>
@@ -62,7 +65,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="168" y="507" width="46" height="30"/>
+                                    <rect key="frame" x="16" y="509" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="onTotalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUn-Zt-rsN"/>
@@ -74,7 +77,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="160" y="537" width="63" height="21"/>
+                                    <rect key="frame" x="70" y="513" width="63" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -94,14 +97,69 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="TuM-Sq-CNP"/>
+                    <navigationItem key="navigationItem" title="Product" id="Pzz-kO-dae"/>
                     <connections>
+                        <outlet property="tableView" destination="OoO-L7-j3H" id="GGq-eN-Nso"/>
                         <outlet property="totalLabel" destination="mC3-A0-hdP" id="NVS-1z-x8m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056" y="306"/>
+        </scene>
+        <!--Product Detail-->
+        <scene sceneID="h6I-zy-bxr">
+            <objects>
+                <viewController id="wdV-xh-Mtq" customClass="ProductDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WLB-tW-G2K"/>
+                        <viewControllerLayoutGuide type="bottom" id="ax8-z7-yFZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KLL-vI-HPH">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaK-wS-wAL">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="40" y="106" width="294" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI1-RR-CBL">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="40" y="145" width="318" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="PaK-wS-wAL"/>
+                                <exclude reference="AI1-RR-CBL"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="PaK-wS-wAL"/>
+                                <include reference="AI1-RR-CBL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Product Detail" id="ogz-W6-IvF"/>
+                    <connections>
+                        <outlet property="name" destination="PaK-wS-wAL" id="N1h-fs-Nbb"/>
+                        <outlet property="quantity" destination="AI1-RR-CBL" id="zpk-te-xA9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tfe-dU-U9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855.5" y="306"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uU2-qB-d8J">

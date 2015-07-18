@@ -8,11 +8,13 @@
 
 #import "ViewController.h"
 #import "DataModel.h"
+#import "ProductDetailViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property DataModel *dataModel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -80,6 +82,16 @@
 - (IBAction)onTotalPressed:(UIButton *)sender {
     NSNumber *i = [self.dataModel getTotal:self.dataModel.productArray];
     self.totalLabel.text = [NSString stringWithFormat:@"%d", [i intValue]];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    ProductDetailViewController *dvc = segue.destinationViewController;
+    UITableViewCell *cell = sender;
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    
+    dvc.product = [self.dataModel.productArray objectAtIndex:indexPath.row];
+    
 }
 
 @end

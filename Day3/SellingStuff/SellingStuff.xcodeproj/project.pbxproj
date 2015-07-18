@@ -16,6 +16,7 @@
 		426614951B59ED31004391A4 /* SellingStuffTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 426614941B59ED31004391A4 /* SellingStuffTests.m */; };
 		426614A01B59F5F9004391A4 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266149F1B59F5F9004391A4 /* Product.m */; };
 		426614A31B5A0E7C004391A4 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 426614A21B5A0E7C004391A4 /* DataModel.m */; };
+		42D1A9561B5A2E8800D28BD6 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1A9551B5A2E8800D28BD6 /* ProductDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		4266149F1B59F5F9004391A4 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		426614A11B5A0E7C004391A4 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		426614A21B5A0E7C004391A4 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		42D1A9541B5A2E8800D28BD6 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		42D1A9551B5A2E8800D28BD6 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				4266147F1B59ED31004391A4 /* ViewController.h */,
 				426614801B59ED31004391A4 /* ViewController.m */,
 				426614821B59ED31004391A4 /* Main.storyboard */,
+				42D1A9541B5A2E8800D28BD6 /* ProductDetailViewController.h */,
+				42D1A9551B5A2E8800D28BD6 /* ProductDetailViewController.m */,
 				426614851B59ED31004391A4 /* Images.xcassets */,
 				426614871B59ED31004391A4 /* LaunchScreen.xib */,
 				426614781B59ED31004391A4 /* Supporting Files */,
@@ -232,6 +237,7 @@
 				426614811B59ED31004391A4 /* ViewController.m in Sources */,
 				426614A31B5A0E7C004391A4 /* DataModel.m in Sources */,
 				426614A01B59F5F9004391A4 /* Product.m in Sources */,
+				42D1A9561B5A2E8800D28BD6 /* ProductDetailViewController.m in Sources */,
 				4266147E1B59ED31004391A4 /* AppDelegate.m in Sources */,
 				4266147B1B59ED31004391A4 /* main.m in Sources */,
 			);
@@ -430,6 +436,7 @@
 				4266149A1B59ED31004391A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4266149B1B59ED31004391A4 /* Build configuration list for PBXNativeTarget "SellingStuffTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +445,7 @@
 				4266149D1B59ED31004391A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
