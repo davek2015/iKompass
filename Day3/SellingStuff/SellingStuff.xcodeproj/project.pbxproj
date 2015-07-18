@@ -14,6 +14,8 @@
 		426614861B59ED31004391A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426614851B59ED31004391A4 /* Images.xcassets */; };
 		426614891B59ED31004391A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 426614871B59ED31004391A4 /* LaunchScreen.xib */; };
 		426614951B59ED31004391A4 /* SellingStuffTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 426614941B59ED31004391A4 /* SellingStuffTests.m */; };
+		426614A01B59F5F9004391A4 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266149F1B59F5F9004391A4 /* Product.m */; };
+		426614A31B5A0E7C004391A4 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 426614A21B5A0E7C004391A4 /* DataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		4266148E1B59ED31004391A4 /* SellingStuffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SellingStuffTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		426614931B59ED31004391A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		426614941B59ED31004391A4 /* SellingStuffTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SellingStuffTests.m; sourceTree = "<group>"; };
+		4266149E1B59F5F9004391A4 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		4266149F1B59F5F9004391A4 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		426614A11B5A0E7C004391A4 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		426614A21B5A0E7C004391A4 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				426614851B59ED31004391A4 /* Images.xcassets */,
 				426614871B59ED31004391A4 /* LaunchScreen.xib */,
 				426614781B59ED31004391A4 /* Supporting Files */,
+				4266149E1B59F5F9004391A4 /* Product.h */,
+				4266149F1B59F5F9004391A4 /* Product.m */,
+				426614A11B5A0E7C004391A4 /* DataModel.h */,
+				426614A21B5A0E7C004391A4 /* DataModel.m */,
 			);
 			path = SellingStuff;
 			sourceTree = "<group>";
@@ -220,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				426614811B59ED31004391A4 /* ViewController.m in Sources */,
+				426614A31B5A0E7C004391A4 /* DataModel.m in Sources */,
+				426614A01B59F5F9004391A4 /* Product.m in Sources */,
 				4266147E1B59ED31004391A4 /* AppDelegate.m in Sources */,
 				4266147B1B59ED31004391A4 /* main.m in Sources */,
 			);
