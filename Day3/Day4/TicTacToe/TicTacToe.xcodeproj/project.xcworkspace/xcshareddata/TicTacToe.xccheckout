@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>1931A897-1829-4AD8-B27B-9AC8B2DE7EB0</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TicTacToe</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8CEA235D3F2A9AD6FD875C63110E51CAB2395F4D</key>
 		<string>github.com:davek2015/iKompass.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Day3/Day4/TicTacToe/TicTacToe.xcodeproj/project.xcworkspace</string>
+	<string>Day3/Day4/TicTacToe/TicTacToe.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8CEA235D3F2A9AD6FD875C63110E51CAB2395F4D</key>
