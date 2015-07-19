@@ -24,30 +24,34 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    Product *product1 = [[Product alloc] init];
-    product1.name = @"Blue Jeans";
+    Product *product1 = [[Product alloc] initWithName:@"Blue Jeans"];
     product1.quantity = 3;
     
+//    Product *product1 = [[Product alloc] init];
+//    product1.name = @"Blue Jeans";
+//    product1.quantity = 3;
+//    
     Product *product2 = [[Product alloc] init];
-    product2.name = @"Red T-Shirt";
-    product2.quantity = 4;
-    
-    Product *product3 = [[Product alloc] init];
-    product3.name = @"Addidas Shoes";
-    product3.quantity = 1;
-    
-    Product *product4 = [[Product alloc] init];
-    product4.name = @"Scooter";
-    product4.quantity = 5;
-    
-    Product *product5 = [[Product alloc] init];
-    product5.name = @"Mountain Bike";
-    product5.quantity = 10;
+//    product2.name = @"Red T-Shirt";
+//    product2.quantity = 4;
+//    
+//    Product *product3 = [[Product alloc] init];
+//    product3.name = @"Addidas Shoes";
+//    product3.quantity = 1;
+//    
+//    Product *product4 = [[Product alloc] init];
+//    product4.name = @"Scooter";
+//    product4.quantity = 5;
+//    
+//    Product *product5 = [[Product alloc] init];
+//    product5.name = @"Mountain Bike";
+//    product5.quantity = 10;
     
     self.dataModel = [[DataModel alloc] init];
     
-    self.dataModel.productArray = [NSMutableArray arrayWithObjects:product1, product2, product3, product4, product5, nil];
+//    self.dataModel.productArray = [NSMutableArray arrayWithObjects:product1, product2, product3, product4, product5, nil];
     
+    self.dataModel.productArray = [NSMutableArray arrayWithObjects:product1, nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,28 @@
 
 #import "Product.h"
 
+@interface Product ()
+
+@property (readwrite) NSString *name;
+
+@end
+
 @implementation Product
+
+-(instancetype) initWithName:(NSString *)name{
+    
+    self = [super init];
+    self.name = name;
+    
+    return self;
+}
+
+-(instancetype) init{
+    
+    NSException *exception = [NSException exceptionWithName:@"Invalid method called" reason:@"Use the initWithName method" userInfo:nil];
+    [exception raise];
+    
+    return self;
+}
 
 @end

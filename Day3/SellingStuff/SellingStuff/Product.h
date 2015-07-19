@@ -10,7 +10,9 @@
 
 @interface Product : NSObject
 
-@property NSString *name;
+@property (readonly) NSString *name;
 @property int quantity;
+
+-(instancetype)initWithName:(NSString *)name;
 
 @end

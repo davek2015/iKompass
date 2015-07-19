@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  MyMovies
+//  ShoppingList
 //
 //  Created by DK Standard on 19/7/15.
 //  Copyright (c) 2015 iKompass. All rights reserved.
@@ -10,7 +10,6 @@
 
 @interface ViewController : UIViewController
 
-@property NSManagedObjectContext *managedObjectContext;
 
 @end
 

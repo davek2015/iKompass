@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SelectedMovieViewController.h
 //  MyMovies
 //
 //  Created by DK Standard on 19/7/15.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SelectedMovieViewController : UIViewController
 
 @property NSManagedObjectContext *managedObjectContext;
 
 @end
-

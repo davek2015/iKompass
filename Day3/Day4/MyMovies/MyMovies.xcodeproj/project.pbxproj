@@ -15,6 +15,8 @@
 		42D13C931B5B51B4006BA0FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D13C921B5B51B4006BA0FB /* Images.xcassets */; };
 		42D13C961B5B51B4006BA0FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D13C941B5B51B4006BA0FB /* LaunchScreen.xib */; };
 		42D13CA21B5B51B4006BA0FB /* MyMoviesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D13CA11B5B51B4006BA0FB /* MyMoviesTests.m */; };
+		42D13CAD1B5B62DC006BA0FB /* SelectedMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D13CAC1B5B62DC006BA0FB /* SelectedMovieViewController.m */; };
+		42D13CB01B5B66A6006BA0FB /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D13CAF1B5B66A6006BA0FB /* Movie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		42D13C9B1B5B51B4006BA0FB /* MyMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D13CA01B5B51B4006BA0FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D13CA11B5B51B4006BA0FB /* MyMoviesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMoviesTests.m; sourceTree = "<group>"; };
+		42D13CAB1B5B62DC006BA0FB /* SelectedMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedMovieViewController.h; sourceTree = "<group>"; };
+		42D13CAC1B5B62DC006BA0FB /* SelectedMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedMovieViewController.m; sourceTree = "<group>"; };
+		42D13CAE1B5B66A6006BA0FB /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Movie.h; path = MyMovies.xcodeproj/../Movie.h; sourceTree = SOURCE_ROOT; };
+		42D13CAF1B5B66A6006BA0FB /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Movie.m; path = MyMovies.xcodeproj/../Movie.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,8 @@
 			children = (
 				42D13C861B5B51B4006BA0FB /* AppDelegate.h */,
 				42D13C871B5B51B4006BA0FB /* AppDelegate.m */,
+				42D13CAE1B5B66A6006BA0FB /* Movie.h */,
+				42D13CAF1B5B66A6006BA0FB /* Movie.m */,
 				42D13C8C1B5B51B4006BA0FB /* ViewController.h */,
 				42D13C8D1B5B51B4006BA0FB /* ViewController.m */,
 				42D13C8F1B5B51B4006BA0FB /* Main.storyboard */,
@@ -92,6 +100,8 @@
 				42D13C941B5B51B4006BA0FB /* LaunchScreen.xib */,
 				42D13C891B5B51B4006BA0FB /* MyMovies.xcdatamodeld */,
 				42D13C821B5B51B4006BA0FB /* Supporting Files */,
+				42D13CAB1B5B62DC006BA0FB /* SelectedMovieViewController.h */,
+				42D13CAC1B5B62DC006BA0FB /* SelectedMovieViewController.m */,
 			);
 			path = MyMovies;
 			sourceTree = "<group>";
@@ -222,9 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D13CB01B5B66A6006BA0FB /* Movie.m in Sources */,
 				42D13C881B5B51B4006BA0FB /* AppDelegate.m in Sources */,
 				42D13C8B1B5B51B4006BA0FB /* MyMovies.xcdatamodeld in Sources */,
 				42D13C8E1B5B51B4006BA0FB /* ViewController.m in Sources */,
+				42D13CAD1B5B62DC006BA0FB /* SelectedMovieViewController.m in Sources */,
 				42D13C851B5B51B4006BA0FB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
