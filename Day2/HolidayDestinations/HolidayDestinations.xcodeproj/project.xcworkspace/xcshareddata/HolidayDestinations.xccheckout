@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8E0C92B3-961B-4F23-A84B-261A0188E636</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HolidayDestinations</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8CEA235D3F2A9AD6FD875C63110E51CAB2395F4D</key>
+		<string>github.com:davek2015/iKompass.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Day2/HolidayDestinations/HolidayDestinations.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8CEA235D3F2A9AD6FD875C63110E51CAB2395F4D</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:davek2015/iKompass.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8CEA235D3F2A9AD6FD875C63110E51CAB2395F4D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8CEA235D3F2A9AD6FD875C63110E51CAB2395F4D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iKompass</string>
+		</dict>
+	</array>
+</dict>
+</plist>

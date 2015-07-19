@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42585AF91B5A7B6100DED5C3 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 42585AF81B5A7B6100DED5C3 /* Movie.m */; };
 		42D1A99B1B5A4A2D00D28BD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1A99A1B5A4A2D00D28BD6 /* main.m */; };
 		42D1A99E1B5A4A2D00D28BD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1A99D1B5A4A2D00D28BD6 /* AppDelegate.m */; };
 		42D1A9A11B5A4A2D00D28BD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1A9A01B5A4A2D00D28BD6 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		42D1A9A61B5A4A2D00D28BD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D1A9A51B5A4A2D00D28BD6 /* Images.xcassets */; };
 		42D1A9A91B5A4A2D00D28BD6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D1A9A71B5A4A2D00D28BD6 /* LaunchScreen.xib */; };
 		42D1A9B51B5A4A2E00D28BD6 /* myFavouriteMoviesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1A9B41B5A4A2E00D28BD6 /* myFavouriteMoviesTests.m */; };
+		42D1A9C01B5A615300D28BD6 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1A9BF1B5A615300D28BD6 /* MovieDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42585AF71B5A7B6100DED5C3 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		42585AF81B5A7B6100DED5C3 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		42D1A9951B5A4A2D00D28BD6 /* myFavouriteMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFavouriteMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D1A9991B5A4A2D00D28BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D1A99A1B5A4A2D00D28BD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		42D1A9AE1B5A4A2E00D28BD6 /* myFavouriteMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myFavouriteMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D1A9B31B5A4A2E00D28BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D1A9B41B5A4A2E00D28BD6 /* myFavouriteMoviesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myFavouriteMoviesTests.m; sourceTree = "<group>"; };
+		42D1A9BE1B5A615300D28BD6 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
+		42D1A9BF1B5A615300D28BD6 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,11 @@
 				42D1A99D1B5A4A2D00D28BD6 /* AppDelegate.m */,
 				42D1A99F1B5A4A2D00D28BD6 /* ViewController.h */,
 				42D1A9A01B5A4A2D00D28BD6 /* ViewController.m */,
+				42585AF71B5A7B6100DED5C3 /* Movie.h */,
+				42585AF81B5A7B6100DED5C3 /* Movie.m */,
 				42D1A9A21B5A4A2D00D28BD6 /* Main.storyboard */,
+				42D1A9BE1B5A615300D28BD6 /* MovieDetailViewController.h */,
+				42D1A9BF1B5A615300D28BD6 /* MovieDetailViewController.m */,
 				42D1A9A51B5A4A2D00D28BD6 /* Images.xcassets */,
 				42D1A9A71B5A4A2D00D28BD6 /* LaunchScreen.xib */,
 				42D1A9981B5A4A2D00D28BD6 /* Supporting Files */,
@@ -219,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D1A9C01B5A615300D28BD6 /* MovieDetailViewController.m in Sources */,
 				42D1A9A11B5A4A2D00D28BD6 /* ViewController.m in Sources */,
+				42585AF91B5A7B6100DED5C3 /* Movie.m in Sources */,
 				42D1A99E1B5A4A2D00D28BD6 /* AppDelegate.m in Sources */,
 				42D1A99B1B5A4A2D00D28BD6 /* main.m in Sources */,
 			);
@@ -418,6 +430,7 @@
 				42D1A9BA1B5A4A2E00D28BD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42D1A9BB1B5A4A2E00D28BD6 /* Build configuration list for PBXNativeTarget "myFavouriteMoviesTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				42D1A9BD1B5A4A2E00D28BD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
