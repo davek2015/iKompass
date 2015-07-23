@@ -31,7 +31,10 @@
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cart" inManagedObjectContext:self.managedObjectContext];
     
     [fetchRequest setEntity:entity];
-    self.savedShoppingArray = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];}
+    
+    self.savedShoppingArray = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -43,10 +46,34 @@
     NSManagedObject *cart = [NSEntityDescription insertNewObjectForEntityForName:@"Cart" inManagedObjectContext:self.managedObjectContext];
 
     [cart setValue: [NSString stringWithFormat:@"%@", self.typedItem.text] forKey:@"item"];
+    [cart setValue: FALSE forKey:@"done"];
     
     [self.managedObjectContext save:nil];
     [self fetchShoppingItem];
     [self.tableView reloadData];
+}
+
+- (IBAction)onClearButtonPressed:(UIButton *)sender {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Cart" inManagedObjectContext:self.managedObjectContext];
+    
+    [fetchRequest setEntity:entity];
+    
+    //new added
+    [fetchRequest setIncludesPropertyValues:NO]; // only fetch the managedObjectID
+    
+    NSError *error = nil;
+    NSArray *fetchshop = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    for (NSManagedObject *object in fetchshop)
+    {
+        [self.managedObjectContext deleteObject:object];
+    }
+    
+    error = nil;
+    [self.managedObjectContext save:&error];
+    
+    self.savedShoppingArray = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
 }
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -60,6 +87,7 @@
     NSManagedObject *managedObject = [self.savedShoppingArray objectAtIndex:indexPath.row];
     
     cell.textLabel.text = [managedObject valueForKeyPath:@"item"];
+    cell.detailTextLabel.text = [managedObject valueForKeyPath:@"done"];
     
     return cell;
 }

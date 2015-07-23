@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4252E6701B5D37DD002503D4 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 4252E66F1B5D37DD002503D4 /* Cart.m */; };
 		42D2879E1B5B8B310018C3F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D2879D1B5B8B310018C3F3 /* main.m */; };
 		42D287A11B5B8B310018C3F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D287A01B5B8B310018C3F3 /* AppDelegate.m */; };
 		42D287A41B5B8B310018C3F3 /* ShoppingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42D287A21B5B8B310018C3F3 /* ShoppingList.xcdatamodeld */; };
@@ -15,7 +16,6 @@
 		42D287AC1B5B8B310018C3F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D287AB1B5B8B310018C3F3 /* Images.xcassets */; };
 		42D287AF1B5B8B310018C3F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D287AD1B5B8B310018C3F3 /* LaunchScreen.xib */; };
 		42D287BB1B5B8B310018C3F3 /* ShoppingListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D287BA1B5B8B310018C3F3 /* ShoppingListTests.m */; };
-		42D287C61B5B8EF10018C3F3 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D287C51B5B8EF10018C3F3 /* Cart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4252E66E1B5D37DD002503D4 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cart.h; path = ../Cart.h; sourceTree = "<group>"; };
+		4252E66F1B5D37DD002503D4 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cart.m; path = ../Cart.m; sourceTree = "<group>"; };
+		42A74C601B5FEACD001C3F3E /* ShoppingList 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ShoppingList 3.xcdatamodel"; sourceTree = "<group>"; };
 		42D287981B5B8B310018C3F3 /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D2879C1B5B8B310018C3F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D2879D1B5B8B310018C3F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,8 +46,6 @@
 		42D287B41B5B8B310018C3F3 /* ShoppingListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D287B91B5B8B310018C3F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D287BA1B5B8B310018C3F3 /* ShoppingListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingListTests.m; sourceTree = "<group>"; };
-		42D287C41B5B8EF10018C3F3 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cart.h; path = ShoppingList.xcodeproj/../Cart.h; sourceTree = SOURCE_ROOT; };
-		42D287C51B5B8EF10018C3F3 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cart.m; path = ShoppingList.xcodeproj/../Cart.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +89,8 @@
 			children = (
 				42D2879F1B5B8B310018C3F3 /* AppDelegate.h */,
 				42D287A01B5B8B310018C3F3 /* AppDelegate.m */,
-				42D287C41B5B8EF10018C3F3 /* Cart.h */,
-				42D287C51B5B8EF10018C3F3 /* Cart.m */,
+				4252E66E1B5D37DD002503D4 /* Cart.h */,
+				4252E66F1B5D37DD002503D4 /* Cart.m */,
 				42D287A51B5B8B310018C3F3 /* ViewController.h */,
 				42D287A61B5B8B310018C3F3 /* ViewController.m */,
 				42D287A81B5B8B310018C3F3 /* Main.storyboard */,
@@ -227,7 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42D287C61B5B8EF10018C3F3 /* Cart.m in Sources */,
+				4252E6701B5D37DD002503D4 /* Cart.m in Sources */,
 				42D287A41B5B8B310018C3F3 /* ShoppingList.xcdatamodeld in Sources */,
 				42D287A11B5B8B310018C3F3 /* AppDelegate.m in Sources */,
 				42D287A71B5B8B310018C3F3 /* ViewController.m in Sources */,
@@ -428,6 +429,7 @@
 				42D287C01B5B8B310018C3F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42D287C11B5B8B310018C3F3 /* Build configuration list for PBXNativeTarget "ShoppingListTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +438,7 @@
 				42D287C31B5B8B310018C3F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -443,6 +446,7 @@
 		42D287A21B5B8B310018C3F3 /* ShoppingList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				42A74C601B5FEACD001C3F3E /* ShoppingList 3.xcdatamodel */,
 				42D287A31B5B8B310018C3F3 /* ShoppingList.xcdatamodel */,
 			);
 			currentVersion = 42D287A31B5B8B310018C3F3 /* ShoppingList.xcdatamodel */;
