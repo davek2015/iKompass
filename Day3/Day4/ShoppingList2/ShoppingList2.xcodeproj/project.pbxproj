@@ -15,6 +15,7 @@
 		425D20CF1B61244A008B7471 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425D20CE1B61244A008B7471 /* Images.xcassets */; };
 		425D20D21B61244A008B7471 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425D20D01B61244A008B7471 /* LaunchScreen.xib */; };
 		425D20DE1B61244A008B7471 /* ShoppingList2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 425D20DD1B61244A008B7471 /* ShoppingList2Tests.m */; };
+		425D20E91B6124BA008B7471 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = 425D20E81B6124BA008B7471 /* Cart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		425D20D71B61244A008B7471 /* ShoppingList2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingList2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		425D20DC1B61244A008B7471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		425D20DD1B61244A008B7471 /* ShoppingList2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingList2Tests.m; sourceTree = "<group>"; };
+		425D20E71B6124BA008B7471 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cart.h; path = ShoppingList2.xcodeproj/../Cart.h; sourceTree = SOURCE_ROOT; };
+		425D20E81B6124BA008B7471 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cart.m; path = ShoppingList2.xcodeproj/../Cart.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 			children = (
 				425D20C21B61244A008B7471 /* AppDelegate.h */,
 				425D20C31B61244A008B7471 /* AppDelegate.m */,
+				425D20E71B6124BA008B7471 /* Cart.h */,
+				425D20E81B6124BA008B7471 /* Cart.m */,
 				425D20C81B61244A008B7471 /* ViewController.h */,
 				425D20C91B61244A008B7471 /* ViewController.m */,
 				425D20CB1B61244A008B7471 /* Main.storyboard */,
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425D20E91B6124BA008B7471 /* Cart.m in Sources */,
 				425D20C71B61244A008B7471 /* ShoppingList2.xcdatamodeld in Sources */,
 				425D20C41B61244A008B7471 /* AppDelegate.m in Sources */,
 				425D20CA1B61244A008B7471 /* ViewController.m in Sources */,
