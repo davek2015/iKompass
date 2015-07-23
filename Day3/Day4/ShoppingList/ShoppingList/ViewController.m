@@ -46,7 +46,6 @@
     NSManagedObject *cart = [NSEntityDescription insertNewObjectForEntityForName:@"Cart" inManagedObjectContext:self.managedObjectContext];
 
     [cart setValue: [NSString stringWithFormat:@"%@", self.typedItem.text] forKey:@"item"];
-    [cart setValue: FALSE forKey:@"done"];
     
     [self.managedObjectContext save:nil];
     [self fetchShoppingItem];
@@ -74,6 +73,7 @@
     [self.managedObjectContext save:&error];
     
     self.savedShoppingArray = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    [self.tableView reloadData];
 }
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -87,7 +87,6 @@
     NSManagedObject *managedObject = [self.savedShoppingArray objectAtIndex:indexPath.row];
     
     cell.textLabel.text = [managedObject valueForKeyPath:@"item"];
-    cell.detailTextLabel.text = [managedObject valueForKeyPath:@"done"];
     
     return cell;
 }
