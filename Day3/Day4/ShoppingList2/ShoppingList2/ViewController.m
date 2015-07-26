@@ -47,7 +47,7 @@
     NSManagedObject *cart = [NSEntityDescription insertNewObjectForEntityForName:@"Cart" inManagedObjectContext:self.managedObjectContext];
     
     [cart setValue: [NSString stringWithFormat:@"%@", self.typedItem.text] forKey:@"item"];
-    [cart setValue: FALSE forKey:@"done"];
+    [cart setValue: [NSNumber numberWithBool:NO] forKey:@"done"];
     
     [self.managedObjectContext save:nil];
     [self fetchShoppingItem];
@@ -90,7 +90,7 @@
     
     cell.textLabel.text = [managedObject valueForKeyPath:@"item"];
 
-    if ((BOOL)[managedObject valueForKeyPath:@"done"] == TRUE)
+    if ((BOOL)[managedObject valueForKeyPath:@"done"] == YES)
     {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     } else {
@@ -112,13 +112,13 @@
     
     NSManagedObject *object = [fetchshop objectAtIndex:indexPath.row];
     
-    if ((BOOL)[object valueForKeyPath:@"done"] == FALSE)
+    if ((BOOL)[object valueForKeyPath:@"done"] == YES)
     {
-        [object setValue:@TRUE forKey:@"done"];
+        [object setValue:[NSNumber numberWithBool:NO] forKey:@"done"];
     }
     else
     {
-        [object setValue:@FALSE forKey:@"done"];
+        [object setValue: [NSNumber numberWithBool:YES] forKey:@"done"];
     }
     
     [self.managedObjectContext save:nil];
@@ -127,5 +127,6 @@
 
     [self.tableView reloadData];
 }
+
 
 @end
